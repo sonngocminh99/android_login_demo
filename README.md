@@ -53,7 +53,7 @@ mBaaSでは、Android, iOS, Unity, JavaScript SDKを提供しています。
 ※ダウンロードしたプロジェクトには既に設定済みですが、最新版が必要な場合は入れ替える必要があります。また既存のプロジェクトでニフティクラウドmobile backend を利用する場合も同じくSDKの実装が必要です。
 
 * SDKダウンロード
-SDKはここ（SDK[リリースページ](https://github.com/NIFTYCloud-mbaas/ncmb_android/releases)）から取得してください.
+SDKはここ（SDK[リリースページ](https://github.com/NIFTYCloud-mbaas/ncmb_android/releases)）から取得してください。
   - NCMB.jarファイルがダウンロードします。
 * SDKをインポート
   - app/libsフォルダにNCMB.jarをコピーします
@@ -83,7 +83,7 @@ dependencies {
 
 
 * アプリ作成されると下図のような画面になります。
-* この２種類のAPIキー（アプリケーションキーとクライアントキー）は先ほどインポートしたAndroidStudioで作成するAndroidアプリにニフティクラウドmobile backendの紐付けるため、あとで使います.
+* この２種類のAPIキー（アプリケーションキーとクライアントキー）は先ほどインポートしたAndroidStudioで作成するAndroidアプリにニフティクラウドmobile backendの紐付けるため、あとで使います。
 ![mBass34.png](https://qiita-image-store.s3.amazonaws.com/0/126379/413fd909-028e-c818-7092-d90d5f5aaec6.png)
 
 
@@ -136,8 +136,8 @@ MainActivityのOnCreateメソッドに実装、ここでAPIキーを渡します。
 * mBaaSのAndroid SDKが提供するNCMBUserクラスが会員管理を操作するためのクラス。データを保存するには、このクラスが提供するsignUpInBackgroundメソッドを利用し、登録、ログインします。
 * 入力ユーザ名とパスワードの妥当性を確認し、設定したユーザ名(userName)とパスワード(password)で会員登録を行います。
 * signUpInBackground()を実施することで、非同期に保存が行われます。非同期実施するため、DoneCallBack()を使って、成功・失敗処理を指定します。
- - 成功する場合、ログイン成功ページを表示します。
- - 失敗する場合、アラートでログイン失敗を表示します。
+ - 会員登録に成功した場合は、ログイン成功ページを表示します。
+ - 会員登録に失敗した場合、アラートでログイン失敗を表示します。
 
 ```java
       public void signup() {
