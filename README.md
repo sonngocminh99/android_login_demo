@@ -14,6 +14,7 @@
 
 ２）今回はAndroidで、ユーザ名・パスワードでの認証方法について説明していきます。
 イメージ的は以下のようになります。
+
 ![device.png](https://qiita-image-store.s3.amazonaws.com/0/126379/82ae570f-45ec-824c-e8f1-94c588b6034e.png)
 
 
@@ -25,7 +26,7 @@
 # 手順
 
 * テンプレートプロジェクトをダウンロード
-* SDKを追加（済み・最新SDKを利用したい場合、更新作業として行ってください）
+* SDKを追加（済み・最新SDKを利用したい場合、更新作業を行ってください)
 * アプリ作成し、キーを設定
 * 動作確認
 
@@ -33,7 +34,8 @@
 
 * プロジェクトの[Githubページ](https://github.com/ncmbadmin/android_login_demo)から「Download ZIP」をクリックします。
 * プロジェクトを解凍します。
-* AndroidStudioを開きます、解凍プロジェクトを開くことを選択します。
+* AndroidStudioを開きます。
+* 解凍したプロジェクトを選択します。
 ![OpenFileProject.png](https://qiita-image-store.s3.amazonaws.com/0/126379/ce219fcc-c51b-8d3b-7698-14970e2d62b7.png)
 
 プロジェクトを選択し開きます。
@@ -42,13 +44,13 @@
 
 # STEP 2. SDKを追加と設定 (済み)
 
-SDKとはニフティクラウドmobile backendが提供している「データストア」「プッシュ通知」などの機能をAndroidからも簡単にコード書ける（数行ぐらい）ライブラリーのものです。
+Android SDKとは、ニフティクラウドmobile backendが提供している「データストア」「プッシュ通知」などの機能を簡単まコードで利用できるものです。
 
 ![002.png](https://qiita-image-store.s3.amazonaws.com/0/18698/75b7512c-7dec-9931-b8f6-66f6dd5a73af.png)
 
 mBaaSでは、Android, iOS, Unity, JavaScript SDKを提供しています。
 今回Android SDKの追加し方と設定を紹介します。
-※ダウンロードしたプロジェクトには既に設定済みですが、最新ではない場合、ご自身で入れ替えてください！またご自身のプロジェクトにもSDKを追加したい場合も同じく実装必要です。
+※ダウンロードしたプロジェクトには既に設定済みですが、最新版が必要な場合は入れ替える必要があります。また既存のプロジェクトでニフティクラウドmobile backend を利用する場合も同じくSDKの実装が必要です。
 
 * SDKダウンロード
 SDKはここ（SDK[リリースページ](https://github.com/NIFTYCloud-mbaas/ncmb_android/releases)）から取得してください.
@@ -77,18 +79,20 @@ dependencies {
 # STEP 3. アプリキー設定
 
 * 会員登録（無料）をし、登録ができたらログインをすると下図のように「アプリの新規作成」画面出るのでアプリを作成します。
-![mBass1-2.png](https://qiita-image-store.s3.amazonaws.com/0/126379/3088b146-737b-1726-38ba-e16d6010d774.png)
+![mBass12.png](https://qiita-image-store.s3.amazonaws.com/0/126379/074da7f5-756f-cc14-3b29-a0cd482fa798.png)
+
 
 * アプリ作成されると下図のような画面になります。
 * この２種類のAPIキー（アプリケーションキーとクライアントキー）は先ほどインポートしたAndroidStudioで作成するAndroidアプリにニフティクラウドmobile backendの紐付けるため、あとで使います.
-![mBass3-4.png](https://qiita-image-store.s3.amazonaws.com/0/126379/8531d19c-99ca-47e3-628c-dcd8baff6070.png)
+![mBass34.png](https://qiita-image-store.s3.amazonaws.com/0/126379/413fd909-028e-c818-7092-d90d5f5aaec6.png)
+
 
 この後動作確認でデータが保存される場所も確認しておきましょう。
-![mBass5-6.png](https://qiita-image-store.s3.amazonaws.com/0/126379/fec223ae-7af3-8605-0436-4dd375c0e69f.png)
+![mBass56.png](https://qiita-image-store.s3.amazonaws.com/0/126379/c4b2f2bd-575b-8f27-c398-81c0f973cea4.png)
 
 * AndroidStudioで取得APIキー(アプリケーションキー、クライントキー)を設定する。
 ![MainActivity.png](https://qiita-image-store.s3.amazonaws.com/0/126379/d0996a98-cf26-a367-c8bd-c93febc592ba.png)
-![APIKey.png](https://qiita-image-store.s3.amazonaws.com/0/126379/48c45a2a-9536-d110-72eb-5fccf7454b95.png)
+![mBassAPIKey.png](https://qiita-image-store.s3.amazonaws.com/0/126379/0768c4b9-af00-a85e-58bb-772ba66353bd.png)
 
 * AndroidStudioからビルドする。
     * 「プロジェクト場所」\app\build\outputs\apk\ ***.apk ファイルが生成される
@@ -100,15 +104,14 @@ dependencies {
 ![LoginPattern.png](https://qiita-image-store.s3.amazonaws.com/0/126379/c3bf4f83-b12c-3ebd-7af4-9350db6212bd.png)
 
 mBaaS側も会員管理データが保存されたことを確認しています！
-![mBassMember.png](https://qiita-image-store.s3.amazonaws.com/0/126379/399d5dbe-ceaa-1a7a-6bb4-306f6fcbad94.png)
+![mBassMember2.png](https://qiita-image-store.s3.amazonaws.com/0/126379/04186b6f-d3d9-ead4-76df-676586238df7.png)
 
 
 # コード説明
 
 * SDKおよび必要なライブラリーをインポートします
 
-```java:MainActivity.java
-
+```java
 import com.nifty.cloud.mb.core.DoneCallback;
 import com.nifty.cloud.mb.core.NCMB;
 import com.nifty.cloud.mb.core.NCMBException;
@@ -119,8 +122,7 @@ import com.nifty.cloud.mb.core.NCMBUser;
 
 MainActivityのOnCreateメソッドに実装、ここでAPIキーを渡します。
 
-```java:MainActivity.java
-
+```java
  @Override
     protected void onCreate(Bundle savedInstanceState) {
        <省略>
@@ -137,8 +139,7 @@ MainActivityのOnCreateメソッドに実装、ここでAPIキーを渡します。
  - 成功する場合、ログイン成功ページを表示します。
  - 失敗する場合、アラートでログイン失敗を表示します。
 
-```java:SignupActivity.java
-
+```java
       public void signup() {
 　　　　<省略>
  　　　　// TODO: Implement your own signup logic here.
@@ -175,13 +176,12 @@ MainActivityのOnCreateメソッドに実装、ここでAPIキーを渡します。
 ２）既存会員のログイン実装
 
 * mBaaSのAndroid SDKが提供するNCMBUserクラスが会員管理操作するためのクラス。このクラスが提供するloginInBackgroundメソッドを利用し、ログインします。
-* 入力ユーザ名とパスワードの妥当性を確認し、ユーザ名とパスワードでログインを実行します。
-* loginInBackground()を実施結果で、
- - 成功する場合、ログイン成功ページを表示します。
- - 失敗する場合、アラートでログイン失敗を表示します。
+* 入力されたユーザ名とパスワードの妥当性を確認し、ユーザ名とパスワードでログインを実行します。
+* loginInBackground()を実施結果に応じて、
+ - ログインに成功した場合は、ログイン成功ページを表示します。
+ - ログインに失敗する場合、アラートでログイン失敗を表示します。
 
-```java:LoginActivity.java
-
+```java
       public void login() {
 　　　　<省略>
         // TODO: Implement your own authentication logic here.
@@ -226,8 +226,8 @@ MainActivityのOnCreateメソッドに実装、ここでAPIキーを渡します。
 
 # 最後に
 
-データを保存するってサーバを立てたり、自分でサーバ運用とか、設計とか、アプリからサーバーとのやりとりも色々考慮しなければなりません。
-最短方法というのは、このようにmBaaSサービスを使って、運用、設計など自分でやらなくて済む、開発も数行コード書けばいいという便利なものはいかがでしょうか？
+データを保存には自前でサーバを立て、運用・設計するだけでなく、アプリとサーバー間のやりとりなど、さまざまなことを考慮しなければなりません。そこでこのようなmBaaSサービスを使って、サーバー運用の手間をなくすことが、アプリ開発を最速・最短で行う重要な方法となってきます。開発も数行のコード書けばいいという便利なものです！しかも無料から始められます！導入してみてはいかがでしょうか？
+
 
 # Contributing
 
