@@ -15,7 +15,7 @@
 ２）今回はAndroidで、ユーザ名・パスワードでの認証方法について説明していきます。
 イメージ的は以下のようになります。
 
-![device.png](https://qiita-image-store.s3.amazonaws.com/0/126379/82ae570f-45ec-824c-e8f1-94c588b6034e.png)
+![画像01](/readme-img/001.png)
 
 
 # 準備
@@ -79,20 +79,21 @@ dependencies {
 # STEP 3. アプリキー設定
 
 * 会員登録（無料）をし、登録ができたらログインをすると下図のように「アプリの新規作成」画面出るのでアプリを作成します。
-![mBass12.png](https://qiita-image-store.s3.amazonaws.com/0/126379/074da7f5-756f-cc14-3b29-a0cd482fa798.png)
 
+![画像03](/readme-img/003.png)
 
 * アプリ作成されると下図のような画面になります。
 * この２種類のAPIキー（アプリケーションキーとクライアントキー）は先ほどインポートしたAndroidStudioで作成するAndroidアプリにニフティクラウドmobile backendの紐付けるため、あとで使います。
-![mBass34.png](https://qiita-image-store.s3.amazonaws.com/0/126379/413fd909-028e-c818-7092-d90d5f5aaec6.png)
 
+![画像04](/readme-img/004.png)
 
 この後動作確認でデータが保存される場所も確認しておきましょう。
-![mBass56.png](https://qiita-image-store.s3.amazonaws.com/0/126379/c4b2f2bd-575b-8f27-c398-81c0f973cea4.png)
 
-* AndroidStudioで取得APIキー(アプリケーションキー、クライントキー)を設定する。
-![MainActivity.png](https://qiita-image-store.s3.amazonaws.com/0/126379/d0996a98-cf26-a367-c8bd-c93febc592ba.png)
-![mBassAPIKey.png](https://qiita-image-store.s3.amazonaws.com/0/126379/0768c4b9-af00-a85e-58bb-772ba66353bd.png)
+![画像05](/readme-img/005.png)
+
+* AndroidStudioでMainActivity.javaにあるAPIキー（アプリケーションキーとクライアントキー）の設定をします。
+
+![画像07](/readme-img/007.png)
 
 * AndroidStudioからビルドする。
     * 「プロジェクト場所」\app\build\outputs\apk\ ***.apk ファイルが生成される
@@ -104,8 +105,8 @@ dependencies {
 ![LoginPattern.png](https://qiita-image-store.s3.amazonaws.com/0/126379/c3bf4f83-b12c-3ebd-7af4-9350db6212bd.png)
 
 mBaaS側も会員管理データが保存されたことを確認しています！
-![mBassMember2.png](https://qiita-image-store.s3.amazonaws.com/0/126379/04186b6f-d3d9-ead4-76df-676586238df7.png)
 
+![画像08](/readme-img/008.png)
 
 # コード説明
 
