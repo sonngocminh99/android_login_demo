@@ -53,7 +53,7 @@ mBaaSでは、Android, iOS, Unity, JavaScript SDKを提供しています。
 ※ダウンロードしたプロジェクトには既に設定済みですが、最新版が必要な場合は入れ替える必要があります。また既存のプロジェクトでニフティクラウドmobile backend を利用する場合も同じくSDKの実装が必要です。
 
 * SDKダウンロード
-SDKはここ（SDK[リリースページ](https://github.com/NIFTYCloud-mbaas/ncmb_android/releases)）から取得してください。
+SDKはここ（SDK[リリースページ](https://github.com/NIFCloud-mbaas/ncmb_android/releases)）から取得してください。
   - NCMB.jarファイルがダウンロードします。
 * SDKをインポート
   - app/libsフォルダにNCMB.jarをコピーします
