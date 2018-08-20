@@ -241,4 +241,4 @@ MainActivityのOnCreateメソッドに実装、ここでAPIキーを渡します。
 # License
 
     MITライセンス
-    NIFTY Cloud mobile backendのAndroid SDKのライセンス
+    NIFCloud mobile backendのAndroid SDKのライセンス
