@@ -1,16 +1,16 @@
 # 概要
 
-１）[ニフティクラウド mobile backend - mBaaS](http://mb.cloud.nifty.com/)での会員の認証方法は以下の4つがあります。
+１）[ニフティクラウド mobile backend - mBaaS](https://mbaas.nifcloud.com/)での会員の認証方法は以下の4つがあります。
 
  * ユーザ名・パスワードでの認証
  * メールアドレス・パスワードでの認証
-    * [ドキュメント](http://mb.cloud.nifty.com/doc/current/user/authorize_email_android.html)
+    * [ドキュメント](https://mbaas.nifcloud.com/doc/current/user/authorize_email_android.html)
  * SNSアカウントでの認証
-   * [ドキュメント（Facebookアカウント）](http://mb.cloud.nifty.com/doc/current/sns/facebook_android.html)
-   * [ドキュメント（Twitterアカウント）](http://mb.cloud.nifty.com/doc/current/sns/twitter_android.html)
-   * [ドキュメント（Googleアカウント）](http://mb.cloud.nifty.com/doc/current/sns/google_android.html)
+   * [ドキュメント（Facebookアカウント）](https://mbaas.nifcloud.com/doc/current/sns/facebook_android.html)
+   * [ドキュメント（Twitterアカウント）](https://mbaas.nifcloud.com/doc/current/sns/twitter_android.html)
+   * [ドキュメント（Googleアカウント）](https://mbaas.nifcloud.com/doc/current/sns/google_android.html)
  * 匿名認証
-   * [ドキュメント](http://mb.cloud.nifty.com/doc/current/user/authorize_anonymous_android.html)
+   * [ドキュメント](https://mbaas.nifcloud.com/doc/current/user/authorize_anonymous_android.html)
 
 ２）今回はAndroidで、ユーザ名・パスワードでの認証方法について説明していきます。
 イメージ的は以下のようになります。
@@ -21,7 +21,7 @@
 # 準備
 
 * Android Studio
-* mBaaSの[アカウント作成](http://mb.cloud.nifty.com/signup.htm)
+* mBaaSの[アカウント作成](https://mbaas.nifcloud.com/signup.htm)
 
 # 手順
 
@@ -220,10 +220,10 @@ MainActivityのOnCreateメソッドに実装、ここでAPIキーを渡します。
 データ保存・データ検索・会員管理・プッシュ通知などの機能を実装したい場合には、
 以下のドキュメントもご参考ください。
 
-* [ドキュメント](http://mb.cloud.nifty.com/doc/current/)
-* [ドキュメント・データストア](http://mb.cloud.nifty.com/doc/current/datastore/basic_usage_android.html)
-* [ドキュメント・会員管理](http://mb.cloud.nifty.com/doc/current/user/basic_usage_android.html)
-* [ドキュメント・プッシュ通知](http://mb.cloud.nifty.com/doc/current/push/basic_usage_android.html)
+* [ドキュメント](https://mbaas.nifcloud.com/doc/current/)
+* [ドキュメント・データストア](https://mbaas.nifcloud.com/doc/current/datastore/basic_usage_android.html)
+* [ドキュメント・会員管理](https://mbaas.nifcloud.com/doc/current/user/basic_usage_android.html)
+* [ドキュメント・プッシュ通知](https://mbaas.nifcloud.com/doc/current/push/basic_usage_android.html)
 
 # 最後に
 
