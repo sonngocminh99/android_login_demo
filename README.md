@@ -101,8 +101,8 @@ dependencies {
 # STEP 4. 確認
 
 アプリにてボタンをタブし、新規登録、ログインする事が確認出来ます。
-![AccountPattern.png](https://qiita-image-store.s3.amazonaws.com/0/126379/bc2a4349-defe-5d5d-59d4-136959ee269b.png)
-![LoginPattern.png](https://qiita-image-store.s3.amazonaws.com/0/126379/c3bf4f83-b12c-3ebd-7af4-9350db6212bd.png)
+![AccountPattern.png](/readme-img/AccountPattern.png)
+![LoginPattern.png](/readme-img/LoginPattern.png)
 
 mBaaS側も会員管理データが保存されたことを確認しています！
 
