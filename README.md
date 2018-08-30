@@ -39,7 +39,7 @@
 ![OpenFileProject.png](https://qiita-image-store.s3.amazonaws.com/0/126379/ce219fcc-c51b-8d3b-7698-14970e2d62b7.png)
 
 プロジェクトを選択し開きます。
-![MainDesing.png](https://qiita-image-store.s3.amazonaws.com/0/126379/41091466-c5d5-10a6-86e3-656713734c7a.png)
+![MainDesing.png](/readme-img/MainDesing.png)
 
 
 # STEP 2. SDKを追加と設定 (済み)
