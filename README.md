@@ -113,10 +113,10 @@ mBaaS側も会員管理データが保存されたことを確認しています！
 * SDKおよび必要なライブラリーをインポートします
 
 ```java
-import com.nifty.cloud.mb.core.DoneCallback;
-import com.nifty.cloud.mb.core.NCMB;
-import com.nifty.cloud.mb.core.NCMBException;
-import com.nifty.cloud.mb.core.NCMBUser;
+import com.nifcloud.mbaas.core.DoneCallback;
+import com.nifcloud.mbaas.core.NCMB;
+import com.nifcloud.mbaas.core.NCMBException;
+import com.nifcloud.mbaas.core.NCMBUser;
 ```
 
 * SDKを初期化
