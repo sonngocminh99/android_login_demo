@@ -1,64 +1,64 @@
-# �T�v
+# 概要
 
-�P�j[�j�t�e�B�N���E�h mobile backend - mBaaS](https://mbaas.nifcloud.com/)�ł̉���̔F�ؕ��@�͈ȉ���4������܂��B
+１）[ニフティクラウド mobile backend - mBaaS](https://mbaas.nifcloud.com/)での会員の認証方法は以下の4つがあります。
 
- * ���[�U���E�p�X���[�h�ł̔F��
- * ���[���A�h���X�E�p�X���[�h�ł̔F��
-    * [�h�L�������g](https://mbaas.nifcloud.com/doc/current/user/authorize_email_android.html)
- * SNS�A�J�E���g�ł̔F��
-   * [�h�L�������g�iFacebook�A�J�E���g�j](https://mbaas.nifcloud.com/doc/current/sns/facebook_android.html)
-   * [�h�L�������g�iTwitter�A�J�E���g�j](https://mbaas.nifcloud.com/doc/current/sns/twitter_android.html)
-   * [�h�L�������g�iGoogle�A�J�E���g�j](https://mbaas.nifcloud.com/doc/current/sns/google_android.html)
- * �����F��
-   * [�h�L�������g](https://mbaas.nifcloud.com/doc/current/user/authorize_anonymous_android.html)
+ * ユーザ名・パスワードでの認証
+ * メールアドレス・パスワードでの認証
+    * [ドキュメント](https://mbaas.nifcloud.com/doc/current/user/authorize_email_android.html)
+ * SNSアカウントでの認証
+   * [ドキュメント（Facebookアカウント）](https://mbaas.nifcloud.com/doc/current/sns/facebook_android.html)
+   * [ドキュメント（Twitterアカウント）](https://mbaas.nifcloud.com/doc/current/sns/twitter_android.html)
+   * [ドキュメント（Googleアカウント）](https://mbaas.nifcloud.com/doc/current/sns/google_android.html)
+ * 匿名認証
+   * [ドキュメント](https://mbaas.nifcloud.com/doc/current/user/authorize_anonymous_android.html)
 
-�Q�j�����Android�ŁA���[�U���E�p�X���[�h�ł̔F�ؕ��@�ɂ��Đ������Ă����܂��B
-�C���[�W�I�͈ȉ��̂悤�ɂȂ�܂��B
+２）今回はAndroidで、ユーザ名・パスワードでの認証方法について説明していきます。
+イメージ的は以下のようになります。
 
-![�摜01](/readme-img/001.png)
+![画像01](/readme-img/001.png)
 
 
-# ����
+# 準備
 
 * Android Studio
-* mBaaS��[�A�J�E���g�쐬](https://mbaas.nifcloud.com/signup.htm)
+* mBaaSの[アカウント作成](https://mbaas.nifcloud.com/signup.htm)
 
-# �菇
+# 手順
 
-* �e���v���[�g�v���W�F�N�g���_�E�����[�h
-* SDK��ǉ��i�ς݁E�ŐVSDK�𗘗p�������ꍇ�A�X�V��Ƃ��s���Ă�������)
-* �A�v���쐬���A�L�[��ݒ�
-* ����m�F
+* テンプレートプロジェクトをダウンロード
+* SDKを追加（済み・最新SDKを利用したい場合、更新作業を行ってください)
+* アプリ作成し、キーを設定
+* 動作確認
 
-# STEP 1. �e���v���[�g�v���W�F�N�g
+# STEP 1. テンプレートプロジェクト
 
-* �v���W�F�N�g��[Github�y�[�W](https://github.com/ncmbadmin/android_login_demo)����uDownload ZIP�v���N���b�N���܂��B
-* �v���W�F�N�g���𓀂��܂��B
-* AndroidStudio���J���܂��B
-* �𓀂����v���W�F�N�g��I�����܂��B
-![OpenFileProject.png](https://qiita-image-store.s3.amazonaws.com/0/126379/ce219fcc-c51b-8d3b-7698-14970e2d62b7.png)
+* プロジェクトの[Githubページ](https://github.com/ncmbadmin/android_login_demo)から「Download ZIP」をクリックします。
+* プロジェクトを解凍します。
+* AndroidStudioを開きます。
+* 解凍したプロジェクトを選択します。
+![OpenFileProject.png](/readme-img/OpenFileProject.png)
 
-�v���W�F�N�g��I�����J���܂��B
+プロジェクトを選択し開きます。
 ![MainDesing.png](/readme-img/MainDesing.png)
 
 
-# STEP 2. SDK��ǉ��Ɛݒ� (�ς�)
+# STEP 2. SDKを追加と設定 (済み)
 
-Android SDK�Ƃ́A�j�t�e�B�N���E�hmobile backend���񋟂��Ă���u�f�[�^�X�g�A�v�u�v�b�V���ʒm�v�Ȃǂ̋@�\���ȒP�܃R�[�h�ŗ��p�ł�����̂ł��B
+Android SDKとは、ニフティクラウドmobile backendが提供している「データストア」「プッシュ通知」などの機能を簡単まコードで利用できるものです。
 
 ![002.png](https://qiita-image-store.s3.amazonaws.com/0/18698/75b7512c-7dec-9931-b8f6-66f6dd5a73af.png)
 
-mBaaS�ł́AAndroid, iOS, Unity, JavaScript SDK��񋟂��Ă��܂��B
-����Android SDK�̒ǉ������Ɛݒ���Љ�܂��B
-���_�E�����[�h�����v���W�F�N�g�ɂ͊��ɐݒ�ς݂ł����A�ŐV�ł��K�v�ȏꍇ�͓���ւ���K�v������܂��B�܂������̃v���W�F�N�g�Ńj�t�e�B�N���E�hmobile backend �𗘗p����ꍇ��������SDK�̎������K�v�ł��B
+mBaaSでは、Android, iOS, Unity, JavaScript SDKを提供しています。
+今回Android SDKの追加し方と設定を紹介します。
+※ダウンロードしたプロジェクトには既に設定済みですが、最新版が必要な場合は入れ替える必要があります。また既存のプロジェクトでニフティクラウドmobile backend を利用する場合も同じくSDKの実装が必要です。
 
-* SDK�_�E�����[�h
-SDK�͂����iSDK[�����[�X�y�[�W](https://github.com/NIFCloud-mbaas/ncmb_android/releases)�j����擾���Ă��������B
-  - NCMB.jar�t�@�C�����_�E�����[�h���܂��B
-* SDK���C���|�[�g
-  - app/libs�t�H���_��NCMB.jar���R�s�[���܂�
-* �ݒ�ǉ�
-  - app/build.gradle�t�@�C���Ɉȉ���ǉ����܂�
+* SDKダウンロード
+SDKはここ（SDK[リリースページ](https://github.com/NIFCloud-mbaas/ncmb_android/releases)）から取得してください。
+  - NCMB.jarファイルがダウンロードします。
+* SDKをインポート
+  - app/libsフォルダにNCMB.jarをコピーします
+* 設定追加
+  - app/build.gradleファイルに以下を追加します
 
 ```
 dependencies {
@@ -66,9 +66,9 @@ dependencies {
     compile files('libs/NCMB.jar')
 }
 ```
-  - androidManifest�̐ݒ�
+  - androidManifestの設定
 
-<application>�^�O�̒��O�Ɉȉ���permission��ǉ����܂��B
+<application>タグの直前に以下のpermissionを追加します。
 
 ```
 <uses-permission android:name="android.permission.INTERNET" />
@@ -76,41 +76,41 @@ dependencies {
 ```
 
 
-# STEP 3. �A�v���L�[�ݒ�
+# STEP 3. アプリキー設定
 
-* ����o�^�i�����j�����A�o�^���ł����烍�O�C��������Ɖ��}�̂悤�Ɂu�A�v���̐V�K�쐬�v��ʏo��̂ŃA�v�����쐬���܂��B
+* 会員登録（無料）をし、登録ができたらログインをすると下図のように「アプリの新規作成」画面出るのでアプリを作成します。
 
-![�摜03](/readme-img/003.png)
+![画像03](/readme-img/003.png)
 
-* �A�v���쐬�����Ɖ��}�̂悤�ȉ�ʂɂȂ�܂��B
-* ���̂Q��ނ�API�L�[�i�A�v���P�[�V�����L�[�ƃN���C�A���g�L�[�j�͐�قǃC���|�[�g����AndroidStudio�ō쐬����Android�A�v���Ƀj�t�e�B�N���E�hmobile backend�̕R�t���邽�߁A���ƂŎg���܂��B
+* アプリ作成されると下図のような画面になります。
+* この２種類のAPIキー（アプリケーションキーとクライアントキー）は先ほどインポートしたAndroidStudioで作成するAndroidアプリにニフティクラウドmobile backendの紐付けるため、あとで使います。
 
-![�摜04](/readme-img/004.png)
+![画像04](/readme-img/004.png)
 
-���̌㓮��m�F�Ńf�[�^���ۑ������ꏊ���m�F���Ă����܂��傤�B
+この後動作確認でデータが保存される場所も確認しておきましょう。
 
-![�摜05](/readme-img/005.png)
+![画像05](/readme-img/005.png)
 
-* AndroidStudio��MainActivity.java�ɂ���API�L�[�i�A�v���P�[�V�����L�[�ƃN���C�A���g�L�[�j�̐ݒ�����܂��B
+* AndroidStudioでMainActivity.javaにあるAPIキー（アプリケーションキーとクライアントキー）の設定をします。
 
-![�摜07](/readme-img/007.png)
+![画像07](/readme-img/007.png)
 
-* AndroidStudio����r���h����B
-    * �u�v���W�F�N�g�ꏊ�v\app\build\outputs\apk\ ***.apk �t�@�C�������������
+* AndroidStudioからビルドする。
+    * 「プロジェクト場所」\app\build\outputs\apk\ ***.apk ファイルが生成される
 
-# STEP 4. �m�F
+# STEP 4. 確認
 
-�A�v���ɂă{�^�����^�u���A�V�K�o�^�A���O�C�����鎖���m�F�o���܂��B
+アプリにてボタンをタブし、新規登録、ログインする事が確認出来ます。
 ![AccountPattern.png](/readme-img/AccountPattern.png)
 ![LoginPattern.png](/readme-img/LoginPattern.png)
 
-mBaaS��������Ǘ��f�[�^���ۑ����ꂽ���Ƃ��m�F���Ă��܂��I
+mBaaS側も会員管理データが保存されたことを確認しています！
 
-![�摜08](/readme-img/008.png)
+![画像08](/readme-img/008.png)
 
-# �R�[�h����
+# コード説明
 
-* SDK����ѕK�v�ȃ��C�u�����[���C���|�[�g���܂�
+* SDKおよび必要なライブラリーをインポートします
 
 ```java
 import com.nifcloud.mbaas.core.DoneCallback;
@@ -119,43 +119,43 @@ import com.nifcloud.mbaas.core.NCMBException;
 import com.nifcloud.mbaas.core.NCMBUser;
 ```
 
-* SDK��������
+* SDKを初期化
 
-MainActivity��OnCreate���\�b�h�Ɏ����A������API�L�[��n���܂��B
+MainActivityのOnCreateメソッドに実装、ここでAPIキーを渡します。
 
 ```java
  @Override
     protected void onCreate(Bundle savedInstanceState) {
-       <�ȗ�>
-        //**************** API�L�[�̐ݒ��SDK�̏����� **********************
+       <省略>
+        //**************** APIキーの設定とSDKの初期化 **********************
         NCMB.initialize(this, "YOUR_APPLICATION_KEY", "YOUR_CLIENT_KEY");
     }
 ```
 
-�P�j����̐V�K�o�^����
+１）会員の新規登録実装
 
-* mBaaS��Android SDK���񋟂���NCMBUser�N���X������Ǘ��𑀍삷�邽�߂̃N���X�B�f�[�^��ۑ�����ɂ́A���̃N���X���񋟂���signUpInBackground���\�b�h�𗘗p���A�o�^�A���O�C�����܂��B
-* ���̓��[�U���ƃp�X���[�h�̑Ó������m�F���A�ݒ肵�����[�U��(userName)�ƃp�X���[�h(password)�ŉ���o�^���s���܂��B
-* signUpInBackground()�����{���邱�ƂŁA�񓯊��ɕۑ����s���܂��B�񓯊����{���邽�߁ADoneCallBack()���g���āA�����E���s�������w�肵�܂��B
- - ����o�^�ɐ��������ꍇ�́A���O�C�������y�[�W��\�����܂��B
- - ����o�^�Ɏ��s�����ꍇ�A�A���[�g�Ń��O�C�����s��\�����܂��B
+* mBaaSのAndroid SDKが提供するNCMBUserクラスが会員管理を操作するためのクラス。データを保存するには、このクラスが提供するsignUpInBackgroundメソッドを利用し、登録、ログインします。
+* 入力ユーザ名とパスワードの妥当性を確認し、設定したユーザ名(userName)とパスワード(password)で会員登録を行います。
+* signUpInBackground()を実施することで、非同期に保存が行われます。非同期実施するため、DoneCallBack()を使って、成功・失敗処理を指定します。
+ - 会員登録に成功した場合は、ログイン成功ページを表示します。
+ - 会員登録に失敗した場合、アラートでログイン失敗を表示します。
 
 ```java
       public void signup() {
-�@�@�@�@<�ȗ�>
- �@�@�@�@// TODO: Implement your own signup logic here.
-        //NCMBUser�̃C���X�^���X���쐬
+　　　　<省略>
+ 　　　　// TODO: Implement your own signup logic here.
+        //NCMBUserのインスタンスを作成
         NCMBUser user = new NCMBUser();
-        //���[�U����ݒ�
+        //ユーザ名を設定
         user.setUserName(name);
-        //�p�X���[�h��ݒ�
+        //パスワードを設定
         user.setPassword(password);
-        //�ݒ肵�����[�U���ƃp�X���[�h�ŉ���o�^���s��
+        //設定したユーザ名とパスワードで会員登録を行う
         user.signUpInBackground(new DoneCallback() {
             @Override
             public void done(NCMBException e) {
                 if (e != null) {
-                    //����o�^���ɃG���[�����������ꍇ�̏���
+                    //会員登録時にエラーが発生した場合の処理
                     onSignupFailed();
                 } else {
                     new android.os.Handler().postDelayed(
@@ -174,25 +174,25 @@ MainActivity��OnCreate���\�b�h�Ɏ����A������API�L�[��n���܂��B
     }
 ```
 
-�Q�j��������̃��O�C������
+２）既存会員のログイン実装
 
-* mBaaS��Android SDK���񋟂���NCMBUser�N���X������Ǘ����삷�邽�߂̃N���X�B���̃N���X���񋟂���loginInBackground���\�b�h�𗘗p���A���O�C�����܂��B
-* ���͂��ꂽ���[�U���ƃp�X���[�h�̑Ó������m�F���A���[�U���ƃp�X���[�h�Ń��O�C�������s���܂��B
-* loginInBackground()�����{���ʂɉ����āA
- - ���O�C���ɐ��������ꍇ�́A���O�C�������y�[�W��\�����܂��B
- - ���O�C���Ɏ��s����ꍇ�A�A���[�g�Ń��O�C�����s��\�����܂��B
+* mBaaSのAndroid SDKが提供するNCMBUserクラスが会員管理操作するためのクラス。このクラスが提供するloginInBackgroundメソッドを利用し、ログインします。
+* 入力されたユーザ名とパスワードの妥当性を確認し、ユーザ名とパスワードでログインを実行します。
+* loginInBackground()を実施結果に応じて、
+ - ログインに成功した場合は、ログイン成功ページを表示します。
+ - ログインに失敗する場合、アラートでログイン失敗を表示します。
 
 ```java
       public void login() {
-�@�@�@�@<�ȗ�>
+　　　　<省略>
         // TODO: Implement your own authentication logic here.
-        //���[�U���ƃp�X���[�h���w�肵�ă��O�C�������s
+        //ユーザ名とパスワードを指定してログインを実行
         try {
             NCMBUser.loginInBackground(name, password, new LoginCallback() {
                 @Override
                 public void done(NCMBUser user, NCMBException e) {
                     if (e != null) {
-                        //�G���[���̏���
+                        //エラー時の処理
                         onLoginFailed();
                     } else {
                         new android.os.Handler().postDelayed(
@@ -214,20 +214,20 @@ MainActivity��OnCreate���\�b�h�Ɏ����A������API�L�[��n���܂��B
     }
 ```
 
-# �Q�l
+# 参考
 
-�T���v���R�[�h���J�X�^�}�C�Y���邱�ƂŁA�l�X�ȋ@�\�������ł��܂��I
-�f�[�^�ۑ��E�f�[�^�����E����Ǘ��E�v�b�V���ʒm�Ȃǂ̋@�\�������������ꍇ�ɂ́A
-�ȉ��̃h�L�������g�����Q�l���������B
+サンプルコードをカスタマイズすることで、様々な機能を実装できます！
+データ保存・データ検索・会員管理・プッシュ通知などの機能を実装したい場合には、
+以下のドキュメントもご参考ください。
 
-* [�h�L�������g](https://mbaas.nifcloud.com/doc/current/)
-* [�h�L�������g�E�f�[�^�X�g�A](https://mbaas.nifcloud.com/doc/current/datastore/basic_usage_android.html)
-* [�h�L�������g�E����Ǘ�](https://mbaas.nifcloud.com/doc/current/user/basic_usage_android.html)
-* [�h�L�������g�E�v�b�V���ʒm](https://mbaas.nifcloud.com/doc/current/push/basic_usage_android.html)
+* [ドキュメント](https://mbaas.nifcloud.com/doc/current/)
+* [ドキュメント・データストア](https://mbaas.nifcloud.com/doc/current/datastore/basic_usage_android.html)
+* [ドキュメント・会員管理](https://mbaas.nifcloud.com/doc/current/user/basic_usage_android.html)
+* [ドキュメント・プッシュ通知](https://mbaas.nifcloud.com/doc/current/push/basic_usage_android.html)
 
-# �Ō��
+# 最後に
 
-�f�[�^��ۑ��ɂ͎��O�ŃT�[�o�𗧂āA�^�p�E�݌v���邾���łȂ��A�A�v���ƃT�[�o�[�Ԃ̂��Ƃ�ȂǁA���܂��܂Ȃ��Ƃ��l�����Ȃ���΂Ȃ�܂���B�����ł��̂悤��mBaaS�T�[�r�X���g���āA�T�[�o�[�^�p�̎�Ԃ��Ȃ������Ƃ��A�A�v���J�����ő��E�ŒZ�ōs���d�v�ȕ��@�ƂȂ��Ă��܂��B�J�������s�̃R�[�h�����΂����Ƃ����֗��Ȃ��̂ł��I��������������n�߂��܂��I�������Ă݂Ă͂������ł��傤���H
+データを保存には自前でサーバを立て、運用・設計するだけでなく、アプリとサーバー間のやりとりなど、さまざまなことを考慮しなければなりません。そこでこのようなmBaaSサービスを使って、サーバー運用の手間をなくすことが、アプリ開発を最速・最短で行う重要な方法となってきます。開発も数行のコード書けばいいという便利なものです！しかも無料から始められます！導入してみてはいかがでしょうか？
 
 
 # Contributing
@@ -240,5 +240,5 @@ MainActivity��OnCreate���\�b�h�Ɏ����A������API�L�[��n���܂��B
 
 # License
 
-    MIT���C�Z���X
-    NIFCloud mobile backend��Android SDK�̃��C�Z���X
+    MITライセンス
+    NIFCloud mobile backendのAndroid SDKのライセンス
