@@ -50,7 +50,7 @@
 
 ### 2. サンプルプロジェクトのダウンロード
 * 下記リンクをクリックしてプロジェクトをダウンロードします
- * https://github.com/NiFCloud-mbaas/KotlinLoginApp/archive/master.zip
+ * https://github.com/NIFCloud-mbaas/android_login_demo/archive/master.zip
 * ダウンロードしたプロジェクトを解凍します
 * AndroidStudio を開きます、「Open an existing Android Studio projct」をクリックして解凍したプロジェクトを選択します
 
