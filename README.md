@@ -1,161 +1,167 @@
-# ŠT—v
+# ã€Androidã€‘ã‚¢ãƒ—ãƒªã«ãƒ­ã‚°ã‚¤ãƒ³æ©Ÿèƒ½ã‚’ã¤ã‘ã‚ˆã†ï¼ for Java
 
-‚Pj[ƒjƒtƒeƒBƒNƒ‰ƒEƒh mobile backend - mBaaS](http://mb.cloud.nifty.com/)‚Å‚Ì‰ïˆõ‚Ì”FØ•û–@‚ÍˆÈ‰º‚Ì4‚Â‚ª‚ ‚è‚Ü‚·B
+![ç”»åƒ1](/readme-img/001.png)
 
- * ƒ†[ƒU–¼EƒpƒXƒ[ƒh‚Å‚Ì”FØ
- * ƒ[ƒ‹ƒAƒhƒŒƒXEƒpƒXƒ[ƒh‚Å‚Ì”FØ
-    * [ƒhƒLƒ…ƒƒ“ƒg](http://mb.cloud.nifty.com/doc/current/user/authorize_email_android.html)
- * SNSƒAƒJƒEƒ“ƒg‚Å‚Ì”FØ
-   * [ƒhƒLƒ…ƒƒ“ƒgiFacebookƒAƒJƒEƒ“ƒgj](http://mb.cloud.nifty.com/doc/current/sns/facebook_android.html)
-   * [ƒhƒLƒ…ƒƒ“ƒgiTwitterƒAƒJƒEƒ“ƒgj](http://mb.cloud.nifty.com/doc/current/sns/twitter_android.html)
-   * [ƒhƒLƒ…ƒƒ“ƒgiGoogleƒAƒJƒEƒ“ƒgj](http://mb.cloud.nifty.com/doc/current/sns/google_android.html)
- * “½–¼”FØ
-   * [ƒhƒLƒ…ƒƒ“ƒg](http://mb.cloud.nifty.com/doc/current/user/authorize_anonymous_android.html)
+## æ¦‚è¦
+* [ãƒ‹ãƒ•ã‚¯ãƒ© mobile backend](https://mbaas.nifcloud.com/) ã®ã€ä¼šå“¡ç®¡ç†æ©Ÿèƒ½ã€ã‚’åˆ©ç”¨ã—ã¦ã€Androidã‚¢ãƒ—ãƒªã«ãƒ­ã‚°ã‚¤ãƒ³æ©Ÿèƒ½ã‚’å®Ÿè£…ã—ãŸã‚µãƒ³ãƒ—ãƒ«ã‚¢ãƒ—ãƒªã§ã™
+* ç°¡å˜ãªæ“ä½œã§ã™ãã« [ ãƒ‹ãƒ•ã‚¯ãƒ© mobile backend ](https://mbaas.nifcloud.com/)ã®æ©Ÿèƒ½ã‚’ä½“é¨“ã„ãŸã ã‘ã¾ã™
 
-‚Qj¡‰ñ‚ÍAndroid‚ÅAƒ†[ƒU–¼EƒpƒXƒ[ƒh‚Å‚Ì”FØ•û–@‚É‚Â‚¢‚Äà–¾‚µ‚Ä‚¢‚«‚Ü‚·B
-ƒCƒ[ƒW“I‚ÍˆÈ‰º‚Ì‚æ‚¤‚É‚È‚è‚Ü‚·B
+##  ãƒ‹ãƒ•ã‚¯ãƒ© mobile backend ã£ã¦ä½•ï¼Ÿï¼Ÿ
+ã‚¹ãƒãƒ¼ãƒˆãƒ•ã‚©ãƒ³ã‚¢ãƒ—ãƒªã®ãƒãƒƒã‚¯ã‚¨ãƒ³ãƒ‰æ©Ÿèƒ½ï¼ˆãƒ—ãƒƒã‚·ãƒ¥é€šçŸ¥ãƒ»ãƒ‡ãƒ¼ã‚¿ã‚¹ãƒˆã‚¢ãƒ»ä¼šå“¡ç®¡ç†ãƒ»ãƒ•ã‚¡ã‚¤ãƒ«ã‚¹ãƒˆã‚¢ãƒ»SNSé€£æºãƒ»ä½ç½®æƒ…å ±æ¤œç´¢ãƒ»ã‚¹ã‚¯ãƒªãƒ—ãƒˆï¼‰ãŒ**é–‹ç™ºä¸è¦**ã€ã—ã‹ã‚‚åŸºæœ¬**ç„¡æ–™**(æ³¨1)ã§ä½¿ãˆã‚‹ã‚¯ãƒ©ã‚¦ãƒ‰ã‚µãƒ¼ãƒ“ã‚¹ï¼
 
-![‰æ‘œ01](/readme-img/001.png)
+æ³¨1ï¼šè©³ã—ãã¯[ã“ã¡ã‚‰](https://mbaas.nifcloud.com/price.htm)ã‚’ã”è¦§ãã ã•ã„
+
+### ãƒ‹ãƒ•ã‚¯ãƒ© mobile backend ã®ä¼šå“¡ã®èªè¨¼æ–¹æ³•
+* ãƒ¦ãƒ¼ã‚¶åãƒ»ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰èªè¨¼
+* ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãƒ»ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰èªè¨¼
+* SNSã‚¢ã‚«ã‚¦ãƒ³ãƒˆã§ã®èªè¨¼
+* åŒ¿åèªè¨¼
+
+æœ¬ã‚µãƒ³ãƒ—ãƒ«ã‚¢ãƒ—ãƒªã¯ã€ãƒ¦ãƒ¼ã‚¶åãƒ»ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã§ã®èªè¨¼æ–¹æ³•ã«ã¤ã„ã¦èª¬æ˜ã—ã¦ã„ãã¾ã™ã€‚
+
+## å‹•ä½œç’°å¢ƒ
+
+* Android Studio ver. 3.1
+* Android OS ver. 6.0
+* Android SDK v3
+  - SDK v2ç³»ã ã¨å‹•ä½œã—ãªã„ã®ã§æ³¨æ„
+
+â€»ä¸Šè¨˜å†…å®¹ã§å‹•ä½œç¢ºèªã‚’ã—ã¦ã„ã¾ã™ã€‚
+
+## æ‰‹é †
+### 1. ãƒ‹ãƒ•ã‚¯ãƒ© mobile backend ã®ä¼šå“¡ç™»éŒ²ãƒ»ãƒ­ã‚°ã‚¤ãƒ³ã¨ã‚¢ãƒ—ãƒªã®æ–°è¦ä½œæˆ
+* ä¸‹è¨˜ãƒªãƒ³ã‚¯ã‹ã‚‰ä¼šå“¡ç™»éŒ²ï¼ˆç„¡æ–™ï¼‰ã‚’ã—ã¾ã™
+  * https://console.mbaas.nifcloud.com/signup
+* ç™»éŒ²ãŒã§ããŸã‚‰ä¸‹è¨˜ãƒªãƒ³ã‚¯ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ã—ã¾ã™
+  * https://console.mbaas.nifcloud.com/
+* ä¸‹å›³ã®ã‚ˆã†ã«ã€Œã‚¢ãƒ—ãƒªã®æ–°è¦ä½œæˆã€ç”»é¢ãŒå‡ºã‚‹ã®ã§ã‚¢ãƒ—ãƒªã‚’ä½œæˆã—ã¾ã™
+  * æ—¢ã« mobile backend ã‚’åˆ©ç”¨ã—ãŸã“ã¨ãŒã‚ã‚‹æ–¹ã¯å·¦ä¸Šã®ã€Œï¼‹æ–°ã—ã„ã‚¢ãƒ—ãƒªã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã¨åŒã˜ç”»é¢ãŒè¡¨ç¤ºã•ã‚Œã¾ã™
+
+![ç”»åƒ3](/readme-img/003.png)
+
+* ã‚¢ãƒ—ãƒªä½œæˆã•ã‚Œã‚‹ã¨APIã‚­ãƒ¼ï¼ˆã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã‚­ãƒ¼ã¨ã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆã‚­ãƒ¼ï¼‰ãŒç™ºè¡Œã•ã‚Œã¾ã™
+* ã“ã®ï¼’ç¨®é¡ã®APIã‚­ãƒ¼ã¯ã“ã®å¾Œãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã™ã‚‹ã‚µãƒ³ãƒ—ãƒ«ã‚¢ãƒ—ãƒªã¨ ãƒ‹ãƒ•ã‚¯ãƒ© mobile backend ã‚’ç´ä»˜ã‘ã‚‹ãŸã‚ã€ã‚ã¨ã§ä½¿ã„ã¾ã™ã€‚
+
+![ç”»åƒ04](/readme-img/004.png)
+
+* ã¤ã„ã§ã«ã€ã“ã®å¾Œå‹•ä½œç¢ºèªã§ä¼šå“¡æƒ…å ±ãŒä¿å­˜ã•ã‚Œã‚‹å ´æ‰€ã‚‚ç¢ºèªã—ã¦ãŠãã¾ã—ã‚‡ã†
+
+![ç”»åƒ05](/readme-img/005.png)
+
+### 2. ã‚µãƒ³ãƒ—ãƒ«ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã®ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰
+* ä¸‹è¨˜ãƒªãƒ³ã‚¯ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã‚’ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—ã¾ã™
+ * https://github.com/NIFCloud-mbaas/android_login_demo/archive/master.zip
+* ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—ãŸãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã‚’è§£å‡ã—ã¾ã™
+* AndroidStudio ã‚’é–‹ãã¾ã™ã€ã€ŒOpen an existing Android Studio projctã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦è§£å‡ã—ãŸãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã‚’é¸æŠã—ã¾ã™
+
+![5554_Nexus_5_API_23_2.png](https://qiita-image-store.s3.amazonaws.com/0/18698/e6d33cfd-978d-8688-a7ad-de0e9bc90daf.png)
+
+* ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆãŒé–‹ã‹ã‚Œã¾ã™
+
+![MainDesing.png](/readme-img/MainDesing.png)
 
 
-# €”õ
+### 3. SDKã®å°å…¥ï¼ˆå®Ÿè£…æ¸ˆã¿ï¼‰
 
-* Android Studio
-* mBaaS‚Ì[ƒAƒJƒEƒ“ƒgì¬](http://mb.cloud.nifty.com/signup.htm)
+â€»ã“ã®ã‚µãƒ³ãƒ—ãƒ«ã‚¢ãƒ—ãƒªã«ã¯æ—¢ã«SDKãŒå®Ÿè£…æ¸ˆã¿ï¼ˆä¸‹è¨˜æ‰‹é †ï¼‰ã¨ãªã£ã¦ã„ã¾ã™ã€‚ï¼ˆver.3.0.0)<br>ã€€æœ€æ–°ç‰ˆã‚’ã”åˆ©ç”¨ã®å ´åˆã¯å…¥ã‚Œæ›¿ãˆã¦ã”åˆ©ç”¨ãã ã•ã„ã€‚
 
-# è‡
-
-* ƒeƒ“ƒvƒŒ[ƒgƒvƒƒWƒFƒNƒg‚ğƒ_ƒEƒ“ƒ[ƒh
-* SDK‚ğ’Ç‰ÁiÏ‚İEÅVSDK‚ğ—˜—p‚µ‚½‚¢ê‡AXVì‹Æ‚ğs‚Á‚Ä‚­‚¾‚³‚¢)
-* ƒAƒvƒŠì¬‚µAƒL[‚ğİ’è
-* “®ìŠm”F
-
-# STEP 1. ƒeƒ“ƒvƒŒ[ƒgƒvƒƒWƒFƒNƒg
-
-* ƒvƒƒWƒFƒNƒg‚Ì[Githubƒy[ƒW](https://github.com/ncmbadmin/android_login_demo)‚©‚çuDownload ZIPv‚ğƒNƒŠƒbƒN‚µ‚Ü‚·B
-* ƒvƒƒWƒFƒNƒg‚ğ‰ğ“€‚µ‚Ü‚·B
-* AndroidStudio‚ğŠJ‚«‚Ü‚·B
-* ‰ğ“€‚µ‚½ƒvƒƒWƒFƒNƒg‚ğ‘I‘ğ‚µ‚Ü‚·B
-![OpenFileProject.png](https://qiita-image-store.s3.amazonaws.com/0/126379/ce219fcc-c51b-8d3b-7698-14970e2d62b7.png)
-
-ƒvƒƒWƒFƒNƒg‚ğ‘I‘ğ‚µŠJ‚«‚Ü‚·B
-![MainDesing.png](https://qiita-image-store.s3.amazonaws.com/0/126379/41091466-c5d5-10a6-86e3-656713734c7a.png)
-
-
-# STEP 2. SDK‚ğ’Ç‰Á‚Æİ’è (Ï‚İ)
-
-Android SDK‚Æ‚ÍAƒjƒtƒeƒBƒNƒ‰ƒEƒhmobile backend‚ª’ñ‹Ÿ‚µ‚Ä‚¢‚éuƒf[ƒ^ƒXƒgƒAvuƒvƒbƒVƒ…’Ê’mv‚È‚Ç‚Ì‹@”\‚ğŠÈ’P‚ÜƒR[ƒh‚Å—˜—p‚Å‚«‚é‚à‚Ì‚Å‚·B
-
-![002.png](https://qiita-image-store.s3.amazonaws.com/0/18698/75b7512c-7dec-9931-b8f6-66f6dd5a73af.png)
-
-mBaaS‚Å‚ÍAAndroid, iOS, Unity, JavaScript SDK‚ğ’ñ‹Ÿ‚µ‚Ä‚¢‚Ü‚·B
-¡‰ñAndroid SDK‚Ì’Ç‰Á‚µ•û‚Æİ’è‚ğĞ‰î‚µ‚Ü‚·B
-¦ƒ_ƒEƒ“ƒ[ƒh‚µ‚½ƒvƒƒWƒFƒNƒg‚É‚ÍŠù‚Éİ’èÏ‚İ‚Å‚·‚ªAÅV”Å‚ª•K—v‚Èê‡‚Í“ü‚ê‘Ö‚¦‚é•K—v‚ª‚ ‚è‚Ü‚·B‚Ü‚½Šù‘¶‚ÌƒvƒƒWƒFƒNƒg‚ÅƒjƒtƒeƒBƒNƒ‰ƒEƒhmobile backend ‚ğ—˜—p‚·‚éê‡‚à“¯‚¶‚­SDK‚ÌÀ‘•‚ª•K—v‚Å‚·B
-
-* SDKƒ_ƒEƒ“ƒ[ƒh
-SDK‚Í‚±‚±iSDK[ƒŠƒŠ[ƒXƒy[ƒW](https://github.com/NIFTYCloud-mbaas/ncmb_android/releases)j‚©‚çæ“¾‚µ‚Ä‚­‚¾‚³‚¢B
-  - NCMB.jarƒtƒ@ƒCƒ‹‚ªƒ_ƒEƒ“ƒ[ƒh‚µ‚Ü‚·B
-* SDK‚ğƒCƒ“ƒ|[ƒg
-  - app/libsƒtƒHƒ‹ƒ_‚ÉNCMB.jar‚ğƒRƒs[‚µ‚Ü‚·
-* İ’è’Ç‰Á
-  - app/build.gradleƒtƒ@ƒCƒ‹‚ÉˆÈ‰º‚ğ’Ç‰Á‚µ‚Ü‚·
-
-```
+* SDKãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰
+SDKã¯ã“ã“ï¼ˆ[SDK ãƒªãƒªãƒ¼ã‚¹ãƒšãƒ¼ã‚¸](https://github.com/NIFCloud-mbaas/ncmb_android/releases)ï¼‰ã‹ã‚‰å–å¾—ã—ã¦ãã ã•ã„.
+  - NCMB.jarãƒ•ã‚¡ã‚¤ãƒ«ãŒãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—ã¾ã™ã€‚
+* SDKã‚’ã‚¤ãƒ³ãƒãƒ¼ãƒˆ
+  - app/libsãƒ•ã‚©ãƒ«ãƒ€ã«NCMB.jarã‚’ã‚³ãƒ”ãƒ¼ã—ã¾ã™
+* è¨­å®šè¿½åŠ 
+  - app/build.gradleãƒ•ã‚¡ã‚¤ãƒ«ã«ä»¥ä¸‹ã‚’è¿½åŠ ã—ã¾ã™
+```gradle
 dependencies {
     compile 'com.google.code.gson:gson:2.3.1'
     compile files('libs/NCMB.jar')
 }
 ```
-  - androidManifest‚Ìİ’è
-
-<application>ƒ^ƒO‚Ì’¼‘O‚ÉˆÈ‰º‚Ìpermission‚ğ’Ç‰Á‚µ‚Ü‚·B
-
-```
+  - androidManifestã®è¨­å®š
+    - <application>ã‚¿ã‚°ã®ç›´å‰ã«ä»¥ä¸‹ã®permissionã‚’è¿½åŠ ã—ã¾ã™
+```html
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 ```
 
+### 4. APIã‚­ãƒ¼ã®è¨­å®š
 
-# STEP 3. ƒAƒvƒŠƒL[İ’è
+* AndroidStudio ã§ MainActivity.java ã‚’é–‹ãã¾ã™
+  * ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã¯ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã§ã€ŒAndroidã€ãŒé¸æŠã•ã‚Œã¦ã„ã¾ã™ã®ã§ã€ã€ŒProjectã€ã«åˆ‡ã‚Šæ›¿ãˆã¦ã‹ã‚‰æ¢ã—ã¦ãã ã•ã„
 
-* ‰ïˆõ“o˜^i–³—¿j‚ğ‚µA“o˜^‚ª‚Å‚«‚½‚çƒƒOƒCƒ“‚ğ‚·‚é‚Æ‰º}‚Ì‚æ‚¤‚ÉuƒAƒvƒŠ‚ÌV‹Kì¬v‰æ–Êo‚é‚Ì‚ÅƒAƒvƒŠ‚ğì¬‚µ‚Ü‚·B
+![ç”»åƒ09](/readme-img/009.png)
 
-![‰æ‘œ03](/readme-img/003.png)
+* APIã‚­ãƒ¼ï¼ˆã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã‚­ãƒ¼ã¨ã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆã‚­ãƒ¼ï¼‰ã®è¨­å®šã‚’ã—ã¾ã™
 
-* ƒAƒvƒŠì¬‚³‚ê‚é‚Æ‰º}‚Ì‚æ‚¤‚È‰æ–Ê‚É‚È‚è‚Ü‚·B
-* ‚±‚Ì‚Qí—Ş‚ÌAPIƒL[iƒAƒvƒŠƒP[ƒVƒ‡ƒ“ƒL[‚ÆƒNƒ‰ƒCƒAƒ“ƒgƒL[j‚Íæ‚Ù‚ÇƒCƒ“ƒ|[ƒg‚µ‚½AndroidStudio‚Åì¬‚·‚éAndroidƒAƒvƒŠ‚ÉƒjƒtƒeƒBƒNƒ‰ƒEƒhmobile backend‚Ì•R•t‚¯‚é‚½‚ßA‚ ‚Æ‚Åg‚¢‚Ü‚·B
+![ç”»åƒ07](/readme-img/007.png)
 
-![‰æ‘œ04](/readme-img/004.png)
+* ãã‚Œãã‚Œ `YOUR_APPLICATION_KEY` ã¨ `YOUR_CLIENT_KEY` ã®éƒ¨åˆ†ã‚’æ›¸ãæ›ãˆã¾ã™
+ * ã“ã®ã¨ãã€ãƒ€ãƒ–ãƒ«ã‚¯ã‚©ãƒ¼ãƒ†ãƒ¼ã‚·ãƒ§ãƒ³ï¼ˆ`"`ï¼‰ã‚’æ¶ˆã•ãªã„ã‚ˆã†ã«æ³¨æ„ã—ã¦ãã ã•ã„
 
-‚±‚ÌŒã“®ìŠm”F‚Åƒf[ƒ^‚ª•Û‘¶‚³‚ê‚éêŠ‚àŠm”F‚µ‚Ä‚¨‚«‚Ü‚µ‚å‚¤B
+### 5. å‹•ä½œç¢ºèª
 
-![‰æ‘œ05](/readme-img/005.png)
+* ã‚¨ãƒŸãƒ¥ãƒ¬ãƒ¼ã‚¿ãƒ¼ã§ã‚¢ãƒ—ãƒªã‚’ãƒ“ãƒ«ãƒ‰ã—ã¾ã™
+ * å¤±æ•—ã™ã‚‹å ´åˆã¯ä¸€åº¦ã€ŒClean Projectã€ã‚’å®Ÿè¡Œã—ã¦ã‹ã‚‰å†åº¦ãƒ“ãƒ«ãƒ‰ã—ã¦ãã ã•ã„
 
-* AndroidStudio‚ÅMainActivity.java‚É‚ ‚éAPIƒL[iƒAƒvƒŠƒP[ƒVƒ‡ƒ“ƒL[‚ÆƒNƒ‰ƒCƒAƒ“ƒgƒL[j‚Ìİ’è‚ğ‚µ‚Ü‚·B
+ * ç”»é¢ã«å¾“ã„æ–°è¦ç™»éŒ²ã€ãƒ­ã‚°ã‚¤ãƒ³ã‚’å®Ÿæ–½ã—ã¦ã¿ã¾ã—ã‚‡ã†
 
-![‰æ‘œ07](/readme-img/007.png)
+![AccountPattern.png](/readme-img/AccountPattern.png)
 
-* AndroidStudio‚©‚çƒrƒ‹ƒh‚·‚éB
-    * uƒvƒƒWƒFƒNƒgêŠv\app\build\outputs\apk\ ***.apk ƒtƒ@ƒCƒ‹‚ª¶¬‚³‚ê‚é
+![LoginPattern.png](/readme-img/LoginPattern.png)
 
-# STEP 4. Šm”F
+* ãƒ‹ãƒ•ã‚¯ãƒ© mobile backend å´ã‚’ç¢ºèªã™ã‚‹ã¨ã€ä¼šå“¡ç®¡ç†ãƒ‡ãƒ¼ã‚¿ãŒä¿å­˜ã•ã‚ŒãŸã“ã¨ã‚’ç¢ºèªã§ãã¾ã™
 
-ƒAƒvƒŠ‚É‚Äƒ{ƒ^ƒ“‚ğƒ^ƒu‚µAV‹K“o˜^AƒƒOƒCƒ“‚·‚é–‚ªŠm”Fo—ˆ‚Ü‚·B
-![AccountPattern.png](https://qiita-image-store.s3.amazonaws.com/0/126379/bc2a4349-defe-5d5d-59d4-136959ee269b.png)
-![LoginPattern.png](https://qiita-image-store.s3.amazonaws.com/0/126379/c3bf4f83-b12c-3ebd-7af4-9350db6212bd.png)
+![ç”»åƒ08](/readme-img/008.png)
 
-mBaaS‘¤‚à‰ïˆõŠÇ—ƒf[ƒ^‚ª•Û‘¶‚³‚ê‚½‚±‚Æ‚ğŠm”F‚µ‚Ä‚¢‚Ü‚·I
 
-![‰æ‘œ08](/readme-img/008.png)
+## ã‚³ãƒ¼ãƒ‰èª¬æ˜
 
-# ƒR[ƒhà–¾
-
-* SDK‚¨‚æ‚Ñ•K—v‚Èƒ‰ƒCƒuƒ‰ƒŠ[‚ğƒCƒ“ƒ|[ƒg‚µ‚Ü‚·
+### å¿…è¦ãªãƒ©ã‚¤ãƒ–ãƒ©ãƒªãƒ¼ã®ã‚¤ãƒ³ãƒãƒ¼ãƒˆ
 
 ```java
-import com.nifty.cloud.mb.core.DoneCallback;
-import com.nifty.cloud.mb.core.NCMB;
-import com.nifty.cloud.mb.core.NCMBException;
-import com.nifty.cloud.mb.core.NCMBUser;
+import com.nifcloud.mbaas.core.DoneCallback;
+import com.nifcloud.mbaas.core.NCMB;
+import com.nifcloud.mbaas.core.NCMBException;
+import com.nifcloud.mbaas.core.NCMBUser;
 ```
 
-* SDK‚ğ‰Šú‰»
+### SDKã®åˆæœŸåŒ–
 
-MainActivity‚ÌOnCreateƒƒ\ƒbƒh‚ÉÀ‘•A‚±‚±‚ÅAPIƒL[‚ğ“n‚µ‚Ü‚·B
+* MainActivity.java ã® `OnCreate` ãƒ¡ã‚½ãƒƒãƒ‰ã«å®Ÿè£…ã—ã¦ã„ã¾ã™
 
 ```java
  @Override
     protected void onCreate(Bundle savedInstanceState) {
-       <È—ª>
-        //**************** APIƒL[‚Ìİ’è‚ÆSDK‚Ì‰Šú‰» **********************
+       <çœç•¥>
+        //**************** APIã‚­ãƒ¼ã®è¨­å®šã¨SDKã®åˆæœŸåŒ– **********************
         NCMB.initialize(this, "YOUR_APPLICATION_KEY", "YOUR_CLIENT_KEY");
     }
 ```
 
-‚Pj‰ïˆõ‚ÌV‹K“o˜^À‘•
+### æ–°è¦ç™»éŒ²
 
-* mBaaS‚ÌAndroid SDK‚ª’ñ‹Ÿ‚·‚éNCMBUserƒNƒ‰ƒX‚ª‰ïˆõŠÇ—‚ğ‘€ì‚·‚é‚½‚ß‚ÌƒNƒ‰ƒXBƒf[ƒ^‚ğ•Û‘¶‚·‚é‚É‚ÍA‚±‚ÌƒNƒ‰ƒX‚ª’ñ‹Ÿ‚·‚ésignUpInBackgroundƒƒ\ƒbƒh‚ğ—˜—p‚µA“o˜^AƒƒOƒCƒ“‚µ‚Ü‚·B
-* “ü—Íƒ†[ƒU–¼‚ÆƒpƒXƒ[ƒh‚Ì‘Ã“–«‚ğŠm”F‚µAİ’è‚µ‚½ƒ†[ƒU–¼(userName)‚ÆƒpƒXƒ[ƒh(password)‚Å‰ïˆõ“o˜^‚ğs‚¢‚Ü‚·B
-* signUpInBackground()‚ğÀ{‚·‚é‚±‚Æ‚ÅA”ñ“¯Šú‚É•Û‘¶‚ªs‚í‚ê‚Ü‚·B”ñ“¯ŠúÀ{‚·‚é‚½‚ßADoneCallBack()‚ğg‚Á‚ÄA¬Œ÷E¸”sˆ—‚ğw’è‚µ‚Ü‚·B
- - ‰ïˆõ“o˜^‚É¬Œ÷‚µ‚½ê‡‚ÍAƒƒOƒCƒ“¬Œ÷ƒy[ƒW‚ğ•\¦‚µ‚Ü‚·B
- - ‰ïˆõ“o˜^‚É¸”s‚µ‚½ê‡AƒAƒ‰[ƒg‚ÅƒƒOƒCƒ“¸”s‚ğ•\¦‚µ‚Ü‚·B
+* SDKãŒæä¾›ã™ã‚‹ `NCMBUser` ã‚¯ãƒ©ã‚¹ãŒä¼šå“¡ç®¡ç†ã‚’æ“ä½œã™ã‚‹ãŸã‚ã®ã‚¯ãƒ©ã‚¹ã§ã™
+* ã“ã®ã‚¯ãƒ©ã‚¹ãŒæä¾›ã™ã‚‹ `signUpInBackground` ãƒ¡ã‚½ãƒƒãƒ‰ã‚’åˆ©ç”¨ã—ã€æ–°è¦ç™»éŒ²ã‚’è¡Œã„ã¾ã™ï¼ˆéåŒæœŸå‡¦ç†ï¼‰
+* è¨­å®šã—ãŸãƒ¦ãƒ¼ã‚¶å(userName)ã¨ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰(password)ã§ä¼šå“¡ç™»éŒ²ã‚’è¡Œã„ã¾ã™
+
 
 ```java
       public void signup() {
-@@@@<È—ª>
- @@@@// TODO: Implement your own signup logic here.
-        //NCMBUser‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ğì¬
+ã€€ã€€ã€€ã€€<çœç•¥>
+ ã€€ã€€ã€€ã€€// TODO: Implement your own signup logic here.
+        //NCMBUserã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ä½œæˆ
         NCMBUser user = new NCMBUser();
-        //ƒ†[ƒU–¼‚ğİ’è
+        //ãƒ¦ãƒ¼ã‚¶åã‚’è¨­å®š
         user.setUserName(name);
-        //ƒpƒXƒ[ƒh‚ğİ’è
+        //ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’è¨­å®š
         user.setPassword(password);
-        //İ’è‚µ‚½ƒ†[ƒU–¼‚ÆƒpƒXƒ[ƒh‚Å‰ïˆõ“o˜^‚ğs‚¤
+        //è¨­å®šã—ãŸãƒ¦ãƒ¼ã‚¶åã¨ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã§ä¼šå“¡ç™»éŒ²ã‚’è¡Œã†
         user.signUpInBackground(new DoneCallback() {
             @Override
             public void done(NCMBException e) {
                 if (e != null) {
-                    //‰ïˆõ“o˜^‚ÉƒGƒ‰[‚ª”­¶‚µ‚½ê‡‚Ìˆ—
+                    //ä¼šå“¡ç™»éŒ²æ™‚ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ãŸå ´åˆã®å‡¦ç†
                     onSignupFailed();
                 } else {
                     new android.os.Handler().postDelayed(
@@ -174,25 +180,23 @@ MainActivity‚ÌOnCreateƒƒ\ƒbƒh‚ÉÀ‘•A‚±‚±‚ÅAPIƒL[‚ğ“n‚µ‚Ü‚·B
     }
 ```
 
-‚QjŠù‘¶‰ïˆõ‚ÌƒƒOƒCƒ“À‘•
+### æ—¢å­˜ä¼šå“¡ã®ãƒ­ã‚°ã‚¤ãƒ³
 
-* mBaaS‚ÌAndroid SDK‚ª’ñ‹Ÿ‚·‚éNCMBUserƒNƒ‰ƒX‚ª‰ïˆõŠÇ—‘€ì‚·‚é‚½‚ß‚ÌƒNƒ‰ƒXB‚±‚ÌƒNƒ‰ƒX‚ª’ñ‹Ÿ‚·‚éloginInBackgroundƒƒ\ƒbƒh‚ğ—˜—p‚µAƒƒOƒCƒ“‚µ‚Ü‚·B
-* “ü—Í‚³‚ê‚½ƒ†[ƒU–¼‚ÆƒpƒXƒ[ƒh‚Ì‘Ã“–«‚ğŠm”F‚µAƒ†[ƒU–¼‚ÆƒpƒXƒ[ƒh‚ÅƒƒOƒCƒ“‚ğÀs‚µ‚Ü‚·B
-* loginInBackground()‚ğÀ{Œ‹‰Ê‚É‰‚¶‚ÄA
- - ƒƒOƒCƒ“‚É¬Œ÷‚µ‚½ê‡‚ÍAƒƒOƒCƒ“¬Œ÷ƒy[ƒW‚ğ•\¦‚µ‚Ü‚·B
- - ƒƒOƒCƒ“‚É¸”s‚·‚éê‡AƒAƒ‰[ƒg‚ÅƒƒOƒCƒ“¸”s‚ğ•\¦‚µ‚Ü‚·B
+* `NCMBUser` ã‚¯ãƒ©ã‚¹ãŒæä¾›ã™ã‚‹ `loginInBackground` ãƒ¡ã‚½ãƒƒãƒ‰ã‚’åˆ©ç”¨ã—ã€ãƒ­ã‚°ã‚¤ãƒ³ã—ã¾ã™ï¼ˆéåŒæœŸå‡¦ç†ï¼‰
+* è¨­å®šã—ãŸãƒ¦ãƒ¼ã‚¶å(userName)ã¨ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰(password)ã§ãƒ­ã‚°ã‚¤ãƒ³ã‚’è¡Œã„ã¾
+
 
 ```java
       public void login() {
-@@@@<È—ª>
+ã€€ã€€ã€€ã€€<çœç•¥>
         // TODO: Implement your own authentication logic here.
-        //ƒ†[ƒU–¼‚ÆƒpƒXƒ[ƒh‚ğw’è‚µ‚ÄƒƒOƒCƒ“‚ğÀs
+        //ãƒ¦ãƒ¼ã‚¶åã¨ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’æŒ‡å®šã—ã¦ãƒ­ã‚°ã‚¤ãƒ³ã‚’å®Ÿè¡Œ
         try {
             NCMBUser.loginInBackground(name, password, new LoginCallback() {
                 @Override
                 public void done(NCMBUser user, NCMBException e) {
                     if (e != null) {
-                        //ƒGƒ‰[‚Ìˆ—
+                        //ã‚¨ãƒ©ãƒ¼æ™‚ã®å‡¦ç†
                         onLoginFailed();
                     } else {
                         new android.os.Handler().postDelayed(
@@ -214,21 +218,14 @@ MainActivity‚ÌOnCreateƒƒ\ƒbƒh‚ÉÀ‘•A‚±‚±‚ÅAPIƒL[‚ğ“n‚µ‚Ü‚·B
     }
 ```
 
-# Ql
+## å‚è€ƒ
 
-ƒTƒ“ƒvƒ‹ƒR[ƒh‚ğƒJƒXƒ^ƒ}ƒCƒY‚·‚é‚±‚Æ‚ÅA—lX‚È‹@”\‚ğÀ‘•‚Å‚«‚Ü‚·I
-ƒf[ƒ^•Û‘¶Eƒf[ƒ^ŒŸõE‰ïˆõŠÇ—EƒvƒbƒVƒ…’Ê’m‚È‚Ç‚Ì‹@”\‚ğÀ‘•‚µ‚½‚¢ê‡‚É‚ÍA
-ˆÈ‰º‚ÌƒhƒLƒ…ƒƒ“ƒg‚à‚²Ql‚­‚¾‚³‚¢B
+ãƒ‡ãƒ¼ã‚¿ä¿å­˜ãƒ»ãƒ‡ãƒ¼ã‚¿æ¤œç´¢ãƒ»ä¼šå“¡ç®¡ç†ãƒ»ãƒ—ãƒƒã‚·ãƒ¥é€šçŸ¥ãªã©ã®æ©Ÿèƒ½ã‚’å®Ÿè£…ã—ãŸã„å ´åˆã¯ã€ä»¥ä¸‹ã®ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆï¼ˆAndroid for Javaï¼‰ã‚‚ã”å‚ç…§ãã ã•ã„ã€‚
 
-* [ƒhƒLƒ…ƒƒ“ƒg](http://mb.cloud.nifty.com/doc/current/)
-* [ƒhƒLƒ…ƒƒ“ƒgEƒf[ƒ^ƒXƒgƒA](http://mb.cloud.nifty.com/doc/current/datastore/basic_usage_android.html)
-* [ƒhƒLƒ…ƒƒ“ƒgE‰ïˆõŠÇ—](http://mb.cloud.nifty.com/doc/current/user/basic_usage_android.html)
-* [ƒhƒLƒ…ƒƒ“ƒgEƒvƒbƒVƒ…’Ê’m](http://mb.cloud.nifty.com/doc/current/push/basic_usage_android.html)
-
-# ÅŒã‚É
-
-ƒf[ƒ^‚ğ•Û‘¶‚É‚Í©‘O‚ÅƒT[ƒo‚ğ—§‚ÄA‰^—pEİŒv‚·‚é‚¾‚¯‚Å‚È‚­AƒAƒvƒŠ‚ÆƒT[ƒo[ŠÔ‚Ì‚â‚è‚Æ‚è‚È‚ÇA‚³‚Ü‚´‚Ü‚È‚±‚Æ‚ğl—¶‚µ‚È‚¯‚ê‚Î‚È‚è‚Ü‚¹‚ñB‚»‚±‚Å‚±‚Ì‚æ‚¤‚ÈmBaaSƒT[ƒrƒX‚ğg‚Á‚ÄAƒT[ƒo[‰^—p‚ÌèŠÔ‚ğ‚È‚­‚·‚±‚Æ‚ªAƒAƒvƒŠŠJ”­‚ğÅ‘¬EÅ’Z‚Ås‚¤d—v‚È•û–@‚Æ‚È‚Á‚Ä‚«‚Ü‚·BŠJ”­‚à”s‚ÌƒR[ƒh‘‚¯‚Î‚¢‚¢‚Æ‚¢‚¤•Ö—˜‚È‚à‚Ì‚Å‚·I‚µ‚©‚à–³—¿‚©‚çn‚ß‚ç‚ê‚Ü‚·I“±“ü‚µ‚Ä‚İ‚Ä‚Í‚¢‚©‚ª‚Å‚µ‚å‚¤‚©H
-
+* [ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆ](https://mbaas.nifcloud.com/doc/current/)
+  * [ãƒ‡ãƒ¼ã‚¿ã‚¹ãƒˆã‚¢](https://mbaas.nifcloud.com/doc/current/datastore/basic_usage_android.html)
+  * [ä¼šå“¡ç®¡ç†](https://mbaas.nifcloud.com/doc/current/user/basic_usage_android.html)
+  * [ãƒ—ãƒƒã‚·ãƒ¥é€šçŸ¥](https://mbaas.nifcloud.com/doc/current/push/basic_usage_android.html)
 
 # Contributing
 
@@ -240,5 +237,5 @@ MainActivity‚ÌOnCreateƒƒ\ƒbƒh‚ÉÀ‘•A‚±‚±‚ÅAPIƒL[‚ğ“n‚µ‚Ü‚·B
 
 # License
 
-    MITƒ‰ƒCƒZƒ“ƒX
-    NIFTY Cloud mobile backend‚ÌAndroid SDK‚Ìƒ‰ƒCƒZƒ“ƒX
+    MITãƒ©ã‚¤ã‚»ãƒ³ã‚¹
+    NIFCloud mobile backendã®Android SDKã®ãƒ©ã‚¤ã‚»ãƒ³ã‚¹

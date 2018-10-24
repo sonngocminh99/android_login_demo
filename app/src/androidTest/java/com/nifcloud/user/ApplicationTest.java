@@ -1,4 +1,4 @@
-package com.nifty.user;
+package com.nifcloud.user;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
