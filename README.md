@@ -24,7 +24,6 @@
 * MacOS Mojave v10.14.6 (18G103)
 * Android studio: 3.4.1
 * Simulator: Pixel 2 Android OS Version 10
-* Unity 2019.1.14f1
 
 ※上記内容で動作確認をしています。
 
@@ -50,7 +49,7 @@
 
 ### 2. サンプルプロジェクトのダウンロード
 * 下記リンクをクリックしてプロジェクトをダウンロードします
- * https://github.com/NIFCloud-mbaas/android_login_demo/archive/master.zip
+ * https://github.com/NIFCLOUD-mbaas/android_login_demo/archive/master.zip
 * ダウンロードしたプロジェクトを解凍します
 * AndroidStudio を開きます、「Open an existing Android Studio project」をクリックして解凍したプロジェクトを選択します
 
@@ -66,7 +65,7 @@
 ※このサンプルアプリには既にSDKが実装済み（下記手順）となっています。（ver.3.0.2)<br>　最新版をご利用の場合は入れ替えてご利用ください。
 
 * SDKダウンロード
-SDKはここ（[SDK リリースページ](https://github.com/NIFCloud-mbaas/ncmb_android/releases)）から取得してください.
+SDKはここ（[SDK リリースページ](https://github.com/NIFCLOUD-mbaas/ncmb_android/releases)）から取得してください.
   - NCMB.jarファイルがダウンロードします。
 * SDKをインポート
   - app/libsフォルダにNCMB.jarをコピーします
