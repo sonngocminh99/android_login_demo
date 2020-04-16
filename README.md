@@ -237,4 +237,4 @@ import com.nifcloud.mbaas.core.NCMBUser;
 # License
 
     MITライセンス
-    NIFCloud mobile backendのAndroid SDKのライセンス
+    NIFCLOUD mobile backendのAndroid SDKのライセンス
