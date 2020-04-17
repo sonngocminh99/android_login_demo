@@ -82,6 +82,7 @@ public class LoginActivity extends AppCompatActivity {
                     if (e != null) {
                         //エラー時の処理
                         onLoginFailed();
+                        progressDialog.dismiss();
                     } else {
                         new android.os.Handler().postDelayed(
                                 new Runnable() {
