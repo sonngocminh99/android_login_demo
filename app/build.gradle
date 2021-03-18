@@ -1,5 +1,16 @@
-plugins {
-    id 'com.android.application'
+def envAccessKey = ENV_ACCESS_KEY
+def envSecretKey = ENV_SECRET_KEY
+apply plugin: 'com.android.application'
+apply plugin: 'devicefarm'
+
+devicefarm {
+    projectName "test_android"
+    devicePool "android" // optional: Defaults to "Top Devices"
+    authentication {
+        accessKey envAccessKey
+        secretKey envSecretKey
+    }
+    instrumentation { }
 }
 
 android {
