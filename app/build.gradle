@@ -13,6 +13,71 @@ devicefarm {
     instrumentation { }
 }
 
+devicefarm {
+
+    // Required. The project must already exist. You can create a project in the AWS Device Farm console.
+    projectName "My Project" // required: Must already exist.
+
+    // Optional. Defaults to "Top Devices"
+    // devicePool "My Device Pool Name"
+    
+    // Optional. Default is 150 minutes
+    // executionTimeoutMinutes 150
+    
+    // Optional. Set to "off" if you want to disable device video recording during a run. Default is "on"
+    // videoRecording "on"
+    
+    // Optional. Set to "off" if you want to disable device performance monitoring during a run. Default is "on"
+    // performanceMonitoring "on"
+    
+    // Optional. Add this if you have a subscription and want to use your unmetered slots
+    // useUnmeteredDevices()
+    
+    // Required. You must specify either accessKey and secretKey OR roleArn. roleArn takes precedence. 
+    authentication {
+        accessKey "AKIAIOSFODNN7EXAMPLE"
+        secretKey "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+        
+        // OR
+        
+        roleArn "arn:aws:iam::111122223333:role/DeviceFarmRole"
+    }
+
+    // Optionally, you can 
+    // - enable or disable Wi-Fi, Bluetooth, GPS, NFC radios
+    // - set the GPS coordinates
+    // - specify files and applications that must be on the device when your test runs
+    devicestate {
+        // Extra files to include on the device.
+        // extraDataZipFile file("path/to/zip")
+        
+        // Other applications that must be installed in addition to yours. 
+        // auxiliaryApps files(file("path/to/app"), file("path/to/app2"))
+        
+        // By default, Wi-Fi, Bluetooth, GPS, and NFC are turned on.
+        // wifi "off"
+        // bluetooth "off"
+        // gps "off"
+        // nfc "off"
+        
+        // You can specify GPS location. By default, this location is 47.6204, -122.3491
+        // latitude 44.97005
+        // longitude -93.28872
+    }
+ 
+    // By default, the Instrumentation test is used.
+    // If you want to use a different test type, configure it here.
+    // You can set only one test type (for example, Calabash, Fuzz, and so on)
+ 
+    // Fuzz
+    // fuzz { }
+
+    // Calabash
+    // calabash { tests file("path-to-features.zip") }
+       
+}
+    
+
 android {
     compileSdkVersion 30
 
