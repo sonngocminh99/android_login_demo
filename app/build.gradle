@@ -1,7 +1,8 @@
-def envAccessKey = ENV_ACCESS_KEY
-def envSecretKey = ENV_SECRET_KEY
 apply plugin: 'com.android.application'
 apply plugin: 'devicefarm'
+
+def envAccessKey = ENV_ACCESS_KEY
+def envSecretKey = ENV_SECRET_KEY
 
 devicefarm {
     projectName "test_android"
