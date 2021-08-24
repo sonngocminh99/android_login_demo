@@ -20,7 +20,7 @@ android {
 
     defaultConfig {
         applicationId "mbaas.com.nifcloud.androidsegmentuserapp"
-        minSdkVersion 14
+        minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -38,6 +38,9 @@ android {
     }
     testOptions {
         animationsDisabled = true
+    }
+    lintOptions {
+        abortOnError false
     }
 }
 
